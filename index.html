@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenMOBot | Build Your Robot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        section {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        #landing {
+            background-color: #333;
+            color: white;
+        }
+
+        #landing h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 1rem;
+            background-color: #FF6F61;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #FF8F81;
+        }
+
+        .chapter {
+            background-color: #fff;
+        }
+
+        .chapter h2 {
+            font-size: 2rem;
+        }
+
+        .nav-buttons {
+            margin-top: 20px;
+        }
+
+        .nav-buttons button {
+            margin: 0 10px;
+        }
+
+        #done {
+            background-color: #333;
+            color: white;
+        }
+
+        #done h2 {
+            font-size: 3rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Landing Section -->
+    <section id="landing">
+        <div>
+            <h1>OpenMOBot</h1>
+            <p>Build your mobile robot platform with OpenMOBot. Explore our repositories to get started:</p>
+            <ul>
+                <li><a href="https://github.com/OpenMOBot/OpenMOBot" target="_blank">OpenMOBot Repository</a></li>
+                <li><a href="https://github.com/OpenMOBot/3DModels" target="_blank">3D Models Repository</a></li>
+                <li><a href="https://github.com/OpenMOBot/under_ros2" target="_blank">Under ROS2 Repository</a></li>
+            </ul>
+            <button onclick="scrollToSection('chapter1')">Build Your Robot</button>
+        </div>
+    </section>
+
+    <!-- Chapters 1 to 9 -->
+    <section class="chapter" id="chapter1">
+        <div>
+            <h2>Chapter 1: Introduction to OpenMOBot</h2>
+            <p>Here's some info about OpenMOBot...</p>
+            <div class="nav-buttons">
+                <button onclick="scrollToSection('chapter2')">Next</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="chapter" id="chapter2">
+        <div>
+            <h2>Chapter 2: Building the Hardware</h2>
+            <p>GIF or content about building the hardware.</p>
+            <div class="nav-buttons">
+                <button onclick="scrollToSection('chapter1')">Back</button>
+                <button onclick="scrollToSection('chapter3')">Next</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- More chapters up to Chapter 9 -->
+    
+    <section class="chapter" id="chapter9">
+        <div>
+            <h2>Chapter 9: Final Setup</h2>
+            <p>GIF or content for the final setup...</p>
+            <div class="nav-buttons">
+                <button onclick="scrollToSection('chapter8')">Back</button>
+                <button onclick="scrollToSection('done')">Finish</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final Section -->
+    <section id="done">
+        <div>
+            <h2>You're Done!</h2>
+            <p>Congratulations on completing the OpenMOBot project!</p>
+            <button onclick="scrollToSection('landing')">Back to Top</button>
+        </div>
+    </section>
+
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+</html>
