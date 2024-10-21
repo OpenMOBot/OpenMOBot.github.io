@@ -28,4 +28,4 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       with:
         personal_token: ${{ secrets.ACTIONS_DEPLOY_KEY }}  # Use the secret name you created
-        publish_dir: ./dist/openmobot_web/browser  # Update this to match your dist folder name
+        publish_dir: ./dist  # Update this to match your dist folder name
