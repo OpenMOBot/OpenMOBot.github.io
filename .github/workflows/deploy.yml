@@ -27,5 +27,5 @@ jobs:
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        personal_token: ${{ secrets.ACTIONS_DEPLOY_KEY }}  # Use the secret name you created
         publish_dir: ./dist/openmobot_web  # Update this to match your dist folder name
