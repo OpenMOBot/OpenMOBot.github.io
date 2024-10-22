@@ -3,27 +3,27 @@ import { StepComponent } from '../step/step.component';
 import { ReviewComponent } from '../review/review.component';
 
 @Component({
-  selector: 'steps-page',
+  selector: 'build-page',
   standalone: true,
   imports: [StepComponent, ReviewComponent],
-  templateUrl: './steps-page.component.html',
-  styleUrl: './steps-page.component.scss',
+  templateUrl: './build-page.component.html',
+  styleUrl: './build-page.component.scss',
 })
-export class StepsPageComponent {
+export class BuildPageComponent {
   steps = [
     {
-      content: 'Test1---------',
-      gifPath: '/assets/gifs/bubu-dudu.gif',
-      title: 'Testtttttретт',
+      content: 'Take the A-S and A-L packages. In the A-S package, you\'ll find the bolts needed to assemble the mount, while the A-L package contains the 3D-printed parts for the assembly. Refer to the accompanying GIF for step-by-step guidance, and if you have any questions, feel free to reach out to the team for assistance',
+      gifPath: '/assets/gifs/step1.gif',
+      title: 'Assemble the sensor mounting part'
     },
     {
       content: 'Test1',
-      gifPath: '/assets/gifs/bubu-dudu.gif',
+      gifPath: '/assets/gifs/step2.gif',
       title: 'Testttttt',
     },
     {
       content: 'Test2',
-      gifPath: 'test',
+      gifPath: '/assets/gifs/step3.gif',
       title: 'Testttttt',
     },
     {
