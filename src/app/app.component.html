@@ -1,99 +1,29 @@
 <div class="main-page">
-
-  <!-- Start Section -->
   <section id="start" class="section">
     <h1>Build your OpenMOBot</h1>
     <div>
-      <button class="btn btn-primary" (click)="scrollTo('step1')">Getting Started</button>
+      <button class="btn btn-primary" (click)="scrollTo(0)">
+        Getting Started
+      </button>
     </div>
   </section>
 
-  <!-- Step 1 Section -->
-  <section id="step1" class="section">
-    <app-step1></app-step1>
-    <div>
-      <button class="btn btn-primary" (click)="scrollTo('step2')">Next</button>
+  @for (step of steps; track step; let i = $index) {
+  <section id="{{ 'step' + i }}" class="section">
+    <app-step [index]="i" [step]="step"></app-step>
+    <div style="margin-top: 20px;">
+      @if (i > 0) {
+      <button class="btn btn-primary" style="margin-right: 0.5rem;" (click)="scrollTo(i-1)">Back</button>
+      }
+      <button class="btn btn-primary" (click)="scrollTo(i + 1)">Next</button>
     </div>
   </section>
+  }
 
-  <!-- Step 2 Section -->
-  <section id="step2" class="section">
-    <app-step2></app-step2>
-    <div>
-      <button class="btn btn-primary" (click)="scrollTo('step1')">Back</button>
-      <button class="btn btn-primary" (click)="scrollTo('step3')">Next</button>
-    </div>
-  </section>
-
-  <!-- Step 3 Section -->
-  <section id="step3" class="section">
-    <app-step3></app-step3>
-    <div>
-      <button class="btn btn-primary" (click)="scrollTo('step2')">Back</button>
-      <button class="btn btn-primary" (click)="scrollTo('step4')">Next</button>
-    </div>
-  </section>
-
-  <!-- Step 4 Section -->
-  <section id="step4" class="section">
-    <app-step4></app-step4>
-    <div>
-      <button class="btn btn-primary" (click)="scrollTo('step3')">Back</button>
-      <button class="btn btn-primary" (click)="scrollTo('step5')">Next</button>
-    </div>
-  </section>
-
-  <!-- Step 5 Section -->
-  <section id="step5" class="section">
-    <app-step5></app-step5>
-    <div>
-      <button class="btn btn-primary" (click)="scrollTo('step4')">Back</button>
-      <button class="btn btn-primary" (click)="scrollTo('step6')">Next</button>
-    </div>
-  </section>
-
-  <!-- Step 6 Section -->
-  <section id="step6" class="section">
-    <app-step6></app-step6>
-    <div>
-      <button class="btn btn-primary" (click)="scrollTo('step5')">Back</button>
-      <button class="btn btn-primary" (click)="scrollTo('step7')">Next</button>
-    </div>
-  </section>
-
-  <!-- Step 7 Section -->
-  <section id="step7" class="section">
-    <app-step7></app-step7>
-    <div>
-      <button class="btn btn-primary" (click)="scrollTo('step6')">Back</button>
-      <button class="btn btn-primary" (click)="scrollTo('step8')">Next</button>
-    </div>
-  </section>
-
-
-  <!-- Step 8 Section -->
-  <section id="step8" class="section">
-    <app-step8></app-step8>
-    <div>
-      <button class="btn btn-primary" (click)="scrollTo('step7')">Back</button>
-      <button class="btn btn-primary" (click)="scrollTo('step9')">Next</button>
-    </div>
-  </section>
-
-  <!-- Step 9 Section -->
-  <section id="step9" class="section">
-    <app-step9></app-step9>
-    <button class="btn btn-primary" (click)="scrollTo('step8')">Back</button>
-    <button class="btn btn-primary" (click)="scrollTo('review')">Finish</button>
-  </section>
-
-  <!-- Review Section -->
   <section id="review" class="section">
     <app-review></app-review>
-    <img src="assets/qr-code.png" alt="QR Code">
+    <img src="assets/qr-code.png" alt="QR Code" />
     <a href="https://example.com/review" target="_blank">Leave your review</a>
-    <button class="btn btn-primary" (click)="scrollTo('start')">Repeat</button>
-
+    <button class="btn btn-primary" (click)="scrollTo()">Repeat</button>
   </section>
-
 </div>
