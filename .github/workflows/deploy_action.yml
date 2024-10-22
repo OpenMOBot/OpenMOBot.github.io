@@ -3,7 +3,7 @@ name: Build and Deploy Angular to GitHub Pages
 on:
   push:
     branches:
-      - main  # Change this to your default branch if it's different
+      - main  # Adjust to your main branch
 
 jobs:
   build-deploy:
@@ -16,16 +16,19 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: '20.18.0'  # Use Node.js v20.18.0
+        node-version: '20.18.0'  # Ensure the correct Node.js version
+
+    - name: Install Angular CLI
+      run: npm install -g @angular/cli  # Install Angular CLI globally
 
     - name: Install dependencies
       run: npm install
 
     - name: Build the Angular project
-      run: ng build --configuration production --base-href "/"
+      run: ng build --configuration production --base-href "/"  # Adjust for your repo name
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
-        personal_token: ${{ secrets.ACTIONS_DEPLOY_KEY }}  # Use the secret name you created
+        personal_token: ${{ secrets.ACTIONS_DEPLOY_KEY }}  # Ensure the secret is set in GitHub
         publish_dir: ./dist/openmobot_web  # Update this to match your dist folder name
