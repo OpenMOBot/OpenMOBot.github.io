@@ -1,7 +1,7 @@
 /* Container for the step */
 .step-container {
-    width: 100%; /* Ensure it takes up 100% of its parent width */
-    max-width: 1200px; /* Limit the max width for large screens */
+    width: 90%; /* Ensure it takes up 100% of its parent width */
+    max-width: 1000px; /* Limit the max width for large screens */
     margin: 0 auto; /* Center the container */
     padding: 20px; /* Fixed padding to ensure consistent spacing */
     box-sizing: border-box; /* Ensures padding is included in the total width */
@@ -23,6 +23,7 @@ h2 {
 p {
     font-size: 1.2em; /* Use em for paragraph text */
 }
+
 
 /* Media query for smaller screens (mobile) */
 @media (max-width: 768px) {
