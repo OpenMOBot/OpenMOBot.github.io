@@ -1,7 +1,7 @@
 <div class="wrapper">
   @for (step of steps; track step; let i = $index) {
   <section id="{{ 'step' + i }}" class="section">
-    <app-step [index]="i" [step]="step"></app-step>
+    <app-step class="app_width" [index]="i" [step]="step"></app-step>
     <div style="margin-top: 20px">
       @if (i > 0) {
       <button
