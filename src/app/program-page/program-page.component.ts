@@ -26,17 +26,17 @@ export class ProgramPageComponent {
     {
       title: 'Install the library',
       content: 'In Documents create folder Arduino and then inside create folder named libraries. Please unzip the downloaded file inside the libraries folder.',
-      gifPath: '/assets/gifs/step2.gif',
+      gifPath: '/assets/gifs/step1.gif',
     },
     {
       title: 'Download the dependancy library',
       content: 'In libraries folder download nad unzip the the following libray: https://github.com/orlin369/FxTimer/archive/refs/heads/main.zip',
-      gifPath: '/assets/gifs/step3.gif',
+      gifPath: '/assets/gifs/step2.gif',
     },
     {
       title: 'Test',
       content: 'It is time to test the LED of the robot.',
-      gifPath: 'test',
+      gifPath: '/assets/gifs/step3.gif',
     },
   ];
 
