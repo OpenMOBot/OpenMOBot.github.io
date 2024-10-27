@@ -20,18 +20,18 @@ export class ProgramPageComponent {
     {
       title: 'Download the library',
       content: 'Affter installing the Arduino IDE it is time to install the library. First download https://github.com/OpenMOBot/OpenMOBot/archive/refs/heads/main.zip.',
-      gifPath: '/assets/images/path.png',
+      gifPath: '/assets/images/repo.png',
       
     },
     {
       title: 'Install the library',
       content: 'In Documents create folder Arduino and then inside create folder named libraries. Please unzip the downloaded file inside the libraries folder.',
-      gifPath: '/assets/gifs/step1.gif',
+      gifPath: '/assets/images/path.png',
     },
     {
       title: 'Download the dependancy library',
       content: 'In libraries folder download nad unzip the the following libray: https://github.com/orlin369/FxTimer/archive/refs/heads/main.zip',
-      gifPath: '/assets/gifs/step2.gif',
+      gifPath: '/assets/gifs/fxt.png',
     },
     {
       title: 'Test',
