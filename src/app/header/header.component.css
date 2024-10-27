@@ -1,8 +1,8 @@
-/* .shadow-nav {
-  -webkit-box-shadow: 0px 30px 69px -11px rgba(0,0,0,0.52);
-  -moz-box-shadow: 0px 30px 69px -11px rgba(0,0,0,0.52);
-  box-shadow: 0px 30px 69px -11px rgba(0,0,0,0.52);
-} */
+.shadow-nav {
+    -webkit-box-shadow: 0px 5px 12px 4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 5px 12px 4px rgba(0,0,0,0.75);
+    box-shadow: 0px 5px 12px 4px rgba(0,0,0,0.75);
+}
 .centered-div {
   width: 90%;
   margin: 0 auto; /* This centers the div horizontally */
