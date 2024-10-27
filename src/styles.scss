@@ -4,6 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 28px;
 }
 
 button {
@@ -13,11 +14,7 @@ button {
 }
 
 .wrapper {
-  background: linear-gradient(
-    135deg,
-    #6a1b9a,
-    #d1c4e9
-  ); /* Gradient background */
+  background: #e3e1e1;
   background-size: cover;
   color: white;
 }
