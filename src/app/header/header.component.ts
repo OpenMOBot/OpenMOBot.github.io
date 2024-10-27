@@ -1,15 +1,16 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { BuildPageComponent } from '../build-page/build-page.component';
 
 @Component({
-  selector: 'home-page',
+  selector: 'app-header',
   standalone: true,
-  templateUrl: './home-page.component.html',
-  styleUrls: ['./home-page.component.scss']
+  imports: [],
+  templateUrl: './header.component.html',
+  styleUrl: './header.component.css'
 })
-export class HomePageComponent {
+export class HeaderComponent {
   constructor(private router: Router) {}
+ 
 
   navigate(path: string) {
     this.router.navigate([path]);

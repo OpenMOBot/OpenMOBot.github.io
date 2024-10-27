@@ -14,13 +14,13 @@ export class ProgramPageComponent {
   steps = [
     {
       title: 'Install Arduino',
-      content: 'Visit https://www.arduino.cc/en/software to download the latest version of the Arduino IDE. Follow the installation instructions provided on the website. Once the installation is complete, proceed to the next step.',
+      content: 'Visit <a href="https://www.arduino.cc/en/software" target="_blank">Arduino Software</a> to download the latest version of the Arduino IDE. Follow the installation instructions provided on the website. Once the installation is complete, proceed to the next step.',
       gifPath: '/assets/images/Arduino_Logo.svg.png',
     },
     {
       title: 'Download the library',
-      content: 'Affter installing the Arduino IDE it is time to install the library. First download https://github.com/OpenMOBot/OpenMOBot/archive/refs/heads/main.zip.',
-      gifPath: '/assets/images/repo.png',
+      content: 'Affter installing the Arduino IDE it is time to install the library. First download <a href="https://github.com/OpenMOBot/OpenMOBot/archive/refs/heads/main.zip" target="_blank">OpenMOBot</a>',
+      gifPath: '/assets/images/path.png',
       
     },
     {
@@ -29,7 +29,7 @@ export class ProgramPageComponent {
       gifPath: '/assets/images/path.png',
     },
     {
-      title: 'Download the dependancy library',
+      title: 'Download the dependency library',
       content: 'In libraries folder download nad unzip the the following libray: https://github.com/orlin369/FxTimer/archive/refs/heads/main.zip',
       gifPath: '/assets/gifs/fxt.png',
     },

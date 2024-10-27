@@ -1,11 +1,29 @@
 <div class="wrapper">
-    <section id="start" class="section">
-      <h1>Build your OpenMOBot</h1>
-      <div>
-        <button class="btn btn-primary me-2" (click)="navigate('build')">
+    <section id="start " class="section m-0">
+
+      <div class="cute-robot-v1">
+        <div class="circle-bg">
+          <div class="robot-ear left"></div>
+          <div class="robot-head">
+            <div class="robot-face">
+              <div class="eyes left"></div>
+              <div class="eyes right"></div>
+              <div class="mouth"></div>
+            </div>
+          </div>
+          <div class="robot-ear right"></div>
+          <div class="robot-body"></div>
+        </div>
+      </div>
+
+      <p id="animated-text">Take your first steps into robotics with</p>
+
+      <h1>OpenMOBot</h1>    
+      <div class="pt-4 buttons-placement d-flex justify-content-center gap-4">
+        <button class="btn btn-secondary btn-lg me-2 custom-btn" (click)="navigate('build')">
           Build Your Robot
         </button>
-        <button class="btn btn-primary" (click)="navigate('program')">
+        <button class="btn btn-secondary btn-lg custom-btn" (click)="navigate('program')">
           Program Your Robot
         </button>
       </div>
