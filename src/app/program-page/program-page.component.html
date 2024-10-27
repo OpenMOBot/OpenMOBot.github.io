@@ -1,6 +1,6 @@
 <div class="wrapper p-0">
     @for (step of steps; track step; let i = $index) {
-    <section id="{{ 'step' + i }}" class="section">
+    <section id="{{ 'step' + i }}" class="section m-0 d-flex justify-content-center align-items-center">
       <app-step class="app_width" [index]="i" [step]="step"></app-step>
       <div style="margin-top: 20px">
         @if (i > 0) {

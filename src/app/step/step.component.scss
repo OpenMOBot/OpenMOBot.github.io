@@ -12,6 +12,12 @@
     border-radius: 10px;
 }
 
+.step-content {
+    
+    width: 95%;
+    height: 100%;
+
+}
 /* Responsive GIF styling */
 .step-gif {
     width: auto; /* Make the GIF fill the container width */
@@ -45,5 +51,24 @@ p {
 
     p {
         font-size: 1em; /* Adjust paragraph size for mobile readability */
+    }
+    /* Responsive GIF styling */
+    .step-gif {
+        width: 95%; /* Make the GIF fill the container width */
+    }
+}
+
+@media (max-width: 576px) {
+    .step-container {
+        width: 95%; /* Take up almost the full screen width on mobile */
+        padding: 10px; /* Reduce padding for smaller devices */
+    }
+
+    h2 {
+        font-size: 1.2em; /* Slightly smaller heading on mobile */
+    }
+
+    p {
+        font-size: 0.8em; /* Adjust paragraph size for mobile readability */
     }
 }

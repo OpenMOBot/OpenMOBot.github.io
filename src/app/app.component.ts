@@ -15,7 +15,7 @@ import { HeaderComponent } from './header/header.component';
     StepComponent,
     ReviewComponent,
     BuildPageComponent,
-    ProgramPageComponent
+    ProgramPageComponent,
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'] // Changed styleUrl to styleUrls (correct spelling)
