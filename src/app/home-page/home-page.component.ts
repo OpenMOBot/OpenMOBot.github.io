@@ -5,13 +5,11 @@ import { BuildPageComponent } from '../build-page/build-page.component';
 @Component({
   selector: 'home-page',
   standalone: true,
-  imports: [],
   templateUrl: './home-page.component.html',
-  styleUrl: './home-page.component.scss'
+  styleUrls: ['./home-page.component.scss']
 })
 export class HomePageComponent {
   constructor(private router: Router) {}
- 
 
   navigate(path: string) {
     this.router.navigate([path]);
