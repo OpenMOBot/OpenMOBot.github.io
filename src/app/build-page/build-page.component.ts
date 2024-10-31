@@ -18,12 +18,12 @@ export class BuildPageComponent {
     },
     {
       content: 'Test1',
-      gifPath: '/assets/gifs/step2.gif',
+      gifPath: '/assets/gifs/NSTCSDVGA480p24fps.gif',
       title: 'Testttttt',
     },
     {
       content: 'Test2',
-      gifPath: '/assets/gifs/step3.gif',
+      gifPath: '/assets/gifs/FWVGA480p24fpshigh.gif',
       title: 'Testttttt',
     },
     {
