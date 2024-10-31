@@ -13,12 +13,12 @@ export class BuildPageComponent {
   steps = [
     {
       content: 'Take the A-S and A-L packages. In the A-S package, you\'ll find the bolts needed to assemble the mount, while the A-L package contains the 3D-printed parts for the assembly. Refer to the accompanying GIF for step-by-step guidance, and if you have any questions, feel free to reach out to the team for assistance ааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааааа',
-      gifPath: '/assets/gifs/chassis.gif',
+      gifPath: '/assets/gifs/nhd360p24fps.gif',
       title: 'Assemble the sensor mounting part'
     },
     {
       content: 'Test1',
-      gifPath: '/assets/gifs/NSTCSDVGA480p24fps.gif',
+      gifPath: '/assets/gifs/NSTCSD14wide240p.gif',
       title: 'Testttttt',
     },
     {
