@@ -5,6 +5,7 @@ interface Step {
   title: string;
   content: string;
   gifPath: string;
+  videoPath: string;
 }
 
 @Component({
@@ -20,5 +21,6 @@ export class StepComponent {
     title: '',
     content: '',
     gifPath: '',
+    videoPath: '',
   };
 }
