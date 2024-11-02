@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
 import { StepComponent } from '../step/step.component';
-import { ReviewComponent } from '../review/review.component';
 
 
 @Component({
   selector: 'program-page',
   standalone: true,
-  imports: [StepComponent, ReviewComponent],
+  imports: [StepComponent],
   templateUrl: './program-page.component.html',
   styleUrl: './program-page.component.css'
 })
