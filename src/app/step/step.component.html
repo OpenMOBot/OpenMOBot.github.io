@@ -6,7 +6,7 @@
     </div>
     <div class="row justify-content-center">
         <!-- Display video if videoPath is available -->
-        <video *ngIf="step.videoPath; else showGif" autoplay loop muted playsinline class="step-gif img-fluid">
+        <video *ngIf="step.videoPath; else showGif" autoplay loop muted playsinline controls class="step-gif img-fluid">
             <source [src]="step.videoPath" type="video/mp4">
             Your browser does not support the video tag.
         </video>
