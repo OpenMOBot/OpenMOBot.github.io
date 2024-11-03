@@ -19,31 +19,31 @@ export class ProgramPageComponent {
 
     },
     {
-      title: 'Download the library',
-      content: 'Affter installing the Arduino IDE it is time to install the library. First download <a href="https://github.com/OpenMOBot/OpenMOBot/archive/refs/heads/main.zip" target="_blank">OpenMOBot</a>',
-      gifPath: '/assets/images/path.png',
+      title: 'Install the ESP32 framework',
+      content: 'Affter installing the Arduino IDE it is time to install the framwork for ESP32. Please follow the link: <a href="https://randomnerdtutorials.com/installing-esp32-arduino-ide-2-0/" target="_blank">ESP32 for Arduino</a>',
+      gifPath: '/assets/images/esp32.png',
       videoPath: '',
 
       
     },
     {
-      title: 'Install the library',
-      content: 'In Documents create folder Arduino and then inside create folder named libraries. Please unzip the downloaded file inside the libraries folder.',
-      gifPath: '/assets/images/path.png',
+      title: 'Download the library',
+      content: 'Affter installing the Arduino IDE it is time to install the library. First download <a href="https://github.com/OpenMOBot/OpenMOBot/archive/refs/heads/main.zip" target="_blank">OpenMOBot</a>',
+      gifPath: '/assets/images/repo.png',
       videoPath: '',
 
     },
     {
       title: 'Download the dependency library',
-      content: 'In libraries folder download nad unzip the the following libray: https://github.com/orlin369/FxTimer/archive/refs/heads/main.zip',
-      gifPath: '/assets/gifs/fxt.png',
+      content: 'In libraries folder download nad unzip the the following libray: <a href="https://github.com/orlin369/FxTimer/archive/refs/heads/main.zip" target="_blank">Link</a>',
+      gifPath: '/assets/images/fxt.png',
       videoPath: '',
 
     },
     {
-      title: 'Test',
+      title: 'Lets test the robot LED :)',
       content: 'It is time to test the LED of the robot.',
-      gifPath: '/assets/gifs/step3.gif',
+      gifPath: '/assets/images/led.jpg',
       videoPath: '',
 
     },
